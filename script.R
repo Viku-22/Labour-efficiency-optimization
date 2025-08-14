@@ -163,7 +163,7 @@ mcSimulation_results <- decisionSupport::mcSimulation(
   functionSyntax = "plainNames"
 )
 
-# plotting thto compe results are NPVs
+# plotting the results to compare NPVs
 
 decisionSupport::plot_distributions(mcSimulation_object = mcSimulation_results, 
                                     vars = c("NPV_cooperative_driven_mechanization",
@@ -246,3 +246,4 @@ evpi_intervention_2 <- multi_EVPI(mc = mcSimulation_table, first_out_var = "NPV_
 
 plot_evpi(evpi_intervention_1, decision_vars = "NPV_decision_mech")
 plot_evpi(evpi_intervention_2, decision_vars = "NPV_decision_gender")
+
