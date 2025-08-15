@@ -14,7 +14,7 @@ for(i in colnames(x))assign(i, as.numeric(x[1,i]),envir=.GlobalEnv)
 make_variables(input)
 make_variables(estimate_read_csv(paste("C:/Users/Mein PC/OneDrive/Brown/Research project/Decision analysis/labour_optimization_DA/cooperative_interventions.csv",sep="")))
 
-# Coding the mathematical model with the name optimization_benefit
+# Coding the mathematical model with the name labour optimization model
 
 labour_optimization_model <- function(x,varname)
 {
@@ -246,4 +246,5 @@ evpi_intervention_2 <- multi_EVPI(mc = mcSimulation_table, first_out_var = "NPV_
 
 plot_evpi(evpi_intervention_1, decision_vars = "NPV_decision_mech")
 plot_evpi(evpi_intervention_2, decision_vars = "NPV_decision_gender")
+
 
